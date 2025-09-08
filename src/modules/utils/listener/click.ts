@@ -10,14 +10,12 @@
  * @param {Object} rendition - EPUBJS rendition
  * @param {function} fn - The listener function.
  */
-import { Rendition } from 'epubjs'
 
 type epubEvent = MouseEvent & { ignore?: boolean }
 type Direction = 'next' | 'prev'
 
 export default function mouseListener(
   document: Document,
-  rendition: Rendition,
   fn: (dire: Direction) => void,
 ) {
   document.addEventListener(
