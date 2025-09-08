@@ -8,5 +8,5 @@ export {
   keyListener,
   wheelListener,
   swipListener,
-  selectListener,
+  selectListener
 }

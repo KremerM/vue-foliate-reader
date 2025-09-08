@@ -127,8 +127,7 @@ const registerEvents = () => {
 }
 
 const onLoad = ({ detail: { doc } }) => {
-  wheelListener(doc, flipPage)
-  swipListener(doc, flipPage)
+  //wheelListener(doc, flipPage)
   keyListener(doc, flipPage)
 }
 
