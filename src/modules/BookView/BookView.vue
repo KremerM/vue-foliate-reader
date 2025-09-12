@@ -122,7 +122,7 @@ const flipPage = (direction) => {
 }
 
 const registerEvents = () => {
-  view.addEventListener('load', onLoad)
+  //view.addEventListener('load', onLoad)
   view.addEventListener('relocate', onRelocate)
 }
 
