@@ -423,7 +423,7 @@ const gn = async (e) => {
   typeof e == "string" && (e = await gn(e));
   let t;
   if (e.isDirectory) {
-    const r = await hn(e), { EPUB: n } = await import("./epub-kXG-7wEO.js");
+    const r = await hn(e), { EPUB: n } = await import("./epub-BTwI3Yiz.js");
     t = await new n(r).init();
   } else if (e.size) if (await sn(e)) {
     const r = await fn(e);
@@ -434,7 +434,7 @@ const gn = async (e) => {
       const { makeFB2: n } = await import("./fb2-DCqZtzQ5.js"), { entries: o } = r, s = o.find((a) => a.filename.endsWith(".fb2")), i = await r.loadBlob((s ?? o[0]).filename);
       t = await n(i);
     } else {
-      const { EPUB: n } = await import("./epub-kXG-7wEO.js");
+      const { EPUB: n } = await import("./epub-BTwI3Yiz.js");
       t = await new n(r).init();
     }
   } else if (await an(e)) {
@@ -694,6 +694,9 @@ class wn extends HTMLElement {
   }
   getSectionFractions() {
     return (this.#t?.sectionFractions ?? []).map((t) => t + Number.EPSILON);
+  }
+  getSectionProgress() {
+    return this.#t;
   }
   getProgressOf(t, r) {
     const n = this.#n?.getProgress(t, r), o = this.#r?.getProgress(t, r);
